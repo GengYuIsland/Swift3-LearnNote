@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Swift学习笔记</title>
+</head>
+<body>
+	<p><strong>一、</strong></p>
+	<p>1.	区分常量和变量</p>
+	<p>2.	何时使用隐式和显示的类型声明</p>
+	<p>3.	可选类型和可选类型绑定的优势</p>
+	<p>4.	可选类型（optionals）和隐式解包的可选类型(implicitly unwrapped optionals)</p>
+	<p>5.	条件语句和循环</p>
+	<p>6.	Switch</p>
+	<p>7.	条件语句中使用where增加条件约束</p>
+	<p>8.	函数、方法和构造器</p>
+	<p>9.	类、结构体和枚举</p>
+	<p>10.	继承和协议一致性(protool conformance)语法</p>
+	<p>11.	确定隐式类型</p>
+	<p></p>
+	<p></p>
+	<p></p>
+
+	<p><strong>二、</strong></p>
+	<p>1.指定类型为显式 let a : double = 2   ， 不指定类型为隐式，确定隐式类型快捷键：option+click</p>
+
+	<p>2.强制类型转换  : </p>
+	<p>		(1)类型（）  例：String()</p>
+	<p>		(2) \()   </p>
+
+	<p>3. 可选类型处理：若一变量可能为nil , 在类型后边加？ 例：let a: Int ? = 2 </p>
+
+	<p>4. If 条件 {</p>
+	<p>	  } else if 条件 {</p>
+	<p>   } else {</p>
+	<p>   }</p>
+
+	<p>5.switch ：</p>
+	<p>		（1） Case不再局限与整数类型，String类型也同样适用</p>
+	<p>		（2）不需要在每个条件中写break</p>
+	<p>		（3）default选项必须写出</p>
+	<p>		 (4) case “条件1”, “条件2”，.. :多个条件可合并为一条case</p>
+
+	<p>6.for-in:</p>
+	<p>		 (1)半开范围操作符 ..< ，不包括最大数字，例：for i in 0..<4 ,循环范围0~3</p>
+	<p>		 (2)封闭范围操作符... ,包括最大数字 ， 例： for _ in 0…4,循环范围0~4</p>
+	<p>		 (3)for _ in .. 中的下划线_ 表示不需要知道i的具体数值时，可用通配符替换表示省略</p>
+
+	<p>7.函数</p>
+	<p>		 (1)构造：func 函数名(形参名:形参类型, 形参名:形参类型) ->返回类型</p>
+	<p>		 例：func johnSnow(name:String, cat:String)->String</p>
+	<p>		 (2)调用:  函数名(实参，实参名：实参) ，传进第一个参数不需要写它的参数名</p>
+	<p>		 例：johnSnow(“Lucy”,cat:”大金毛”)   </p>
+
+	<p>8.类</p>
+	<p>		 (1)定义类 ：class 类名</p>
+	<p>		 例： class Person {</p>
+	<p></p>
+	<p>		     {</p>
+	<p>		 继承例： class Person: Man {</p>
+	<p></p>
+	<p>		         }</p>
+	<p>		 (2)定义类属性和函数：将属性和函数写到类的大括号里，通过点语法访问。</p>
+	<p>		 (3)创建对象： 类名后面加上()，例： var person = Person()</p>
+	<p>		 (4)重写父类方法：override func 类名(形参名：形参类型)->返回值类型</p>
+	<p>		 (5)构造器方法： init(形参名:形参类型， 形参名：形参类型) or init()</p>
+	<p>		 使用构造器方法：let person = Person(name:”Star”,heavy:108)</p>
+	<p>		 init ? (形参名：形参类型)  , 使用init?声明一个可失败构造器</p>
+	<p>		 例： init ? (name:String, heavy:Float) {</p>
+	<p>			 	self.name = “”</p>
+	<p>				super.init()</p>
+	<p>			  }</p>
+
+	<p>9.协议</p>
+	<p>		 (1)协议声明： protocol 协议名 {</p>
+	<p></p>
+	<p>					  }</p>
+	<p>		 (2)遵循协议： 类、结构体或枚举在其名字后边写上冒号，如有父类，先写父类名，用逗号隔开，接着写协议名。</p>
+	<p>			例： class Person : Man, FirstProtocol, SecondProtocol {</p>
+	<p></p>
+	<p>				 }</p>
+
+	<p></p>
+	<p></p>
+
+	<strong>---END---</strong>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+</body>
+</html>
